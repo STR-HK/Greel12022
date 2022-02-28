@@ -1,0 +1,187 @@
+@import url('assets/css/PretendardDynamicSubset.css');
+
+@import url(assets/css/global.css);
+@import url(assets/css/header.css);
+/* assets/css/ */
+@import url(assets/css/body.css);
+/* assets/css/ */
+@import url(assets/css/card.css);
+@import url(assets/css/spec_card.css);
+@import url(assets/css/spec_icon.css);
+@import url(assets/css/sped_card_style.css);
+/* assets/css/ */
+@import url(assets/css/footer.css);
+
+.card_first_second_line {
+    flex-direction: column;
+    align-items: normal;
+    gap: 6px;
+}
+
+.card_pr {
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 17px;
+
+    height: 7px;
+    width: 100%;
+
+}
+
+.progress {
+    height: 100%;
+}
+.pr_s {
+    width: 30%;
+
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+
+    background: #f1a200;
+}
+.pr_e {
+    width: 70%;
+
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+
+    background: #ffce6a;
+}
+
+
+
+.card_circle_line {
+    /* height: 100%; */
+    justify-content: center;
+    align-items: normal;
+    aspect-ratio: 1;
+    width: 100%;
+
+    padding: 17px;
+}
+
+.card_circle {
+  max-width: 100%;
+  max-height: 100%;
+
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: 
+    radial-gradient(closest-side, #FFC2BD 70%, transparent 0 99.9%, #FFC2BD 0),
+    conic-gradient(#e9847d calc(65 * 1%), #f7a9a2 0);
+}
+
+.card_column {
+    margin-top: 30px;
+    margin-bottom: 55px;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+}
+
+.card_big {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.card_d_big {
+    font-size: small;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card_second_second {
+    height: 100%;
+    padding: 17px;
+}
+
+
+.card_sub_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.vert_pr {
+    width: 8px;
+}
+
+.m {
+    height: 50%;
+}
+.d {
+    height: 70%;
+}
+.t {
+    height: 90%;
+}
+
+
+.vert_pr_s {
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+
+    background: #91c969;
+    height: 40%;
+}
+.vert_pr_e {
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+
+    background: #b4e492;
+    height: 60%;
+}
+
+
+
+
+
+.theme_text {
+    justify-content: center;
+}
+
+.card_inner_theme {
+    padding: 20px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.theme_icon {
+    width: 100%;
+    max-height: 100%;
+    aspect-ratio: 1;
+}
+
+.theme_d {
+    text-align: center;
+
+    /* font-size: 24px; */
+
+    margin-top: 10px;
+}

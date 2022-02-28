@@ -1,0 +1,56 @@
+.start_bg {
+    height: 22%;
+    width: 100%;
+}
+.start {
+    background: #FFE9BC;
+}
+
+
+.first_bg {
+    height: 39%;
+    width: 100%;
+}
+.first {
+    background: #FFC2BD;
+}
+
+
+.second_bg {
+    height: 39%;
+    width: 100%;
+}
+.second {
+    background: #D7F4C1;
+}
+
+/*  */
+/*  */
+/*  */
+
+
+.listen_bg {
+    height: 12%;
+    width: 100%;
+}
+.listen {
+    background: #f9f7b0;
+}
+
+
+.theme_bg {
+    height: 39%;
+    width: 100%;
+}
+.theme {
+    background: #E1E7FF;
+}
+
+
+.vacation_bg {
+    height: 49%;
+    width: 100%;
+}
+.vacation {
+    background: #EFDAFE;
+}

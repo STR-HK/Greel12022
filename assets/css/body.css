@@ -1,0 +1,22 @@
+.body {
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+}

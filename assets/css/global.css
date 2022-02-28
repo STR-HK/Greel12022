@@ -1,0 +1,26 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+    font-family: 'Pretendard';
+
+    /* background-color: #DFE1EE; */
+    background-color: #262626;
+
+    /* background: rgb(69,17,63); */
+    /* background: linear-gradient(180deg, rgba(69,17,63,1) 0%, rgba(103,42,82,1) 100%); */
+}
+
+div {
+    box-sizing: border-box;
+
+}
+
+* {
+    color: #262626;
+
+    user-select: none;
+}
