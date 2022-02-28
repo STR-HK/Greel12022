@@ -113,11 +113,9 @@ function render() {
     let first_dday = get_dday(first_date)
     let first_dday_text = get_dday_text(first_date)
     let first_percent = get_percent(first_date)
-    console.log(first_percent)
 
     let E_firstCARD = get_from(document, "first card")
     let E_firstCIRCLE = get_from(E_firstCARD, "card_circle")
-    console.log(E_firstCIRCLE)
     if (first_percent < 100) {
 
         E_firstCIRCLE.style.background = `
@@ -144,7 +142,6 @@ function render() {
     let E_secondSECONDL = get_from(document, "card_second_second")
     let E_startVERTPR_s_list = get_all_from(E_secondSECONDL, "vert_pr_s")
     let E_startVERTPR_e_list = get_all_from(E_secondSECONDL, "vert_pr_e")
-    console.log(E_startVERTPR_s_list, E_startVERTPR_e_list)
 
     if (second_percent < 100) {
 
@@ -167,7 +164,6 @@ function render() {
             e.style.borderRadius = "22px"
         })
     }
-
 
     // 
 
@@ -193,9 +189,7 @@ function render() {
 
     let E_themeICON = get_from(document, "theme_icon")
     let E_themeGRA = E_themeICON.getElementsByTagName("linearGradient")[0]
-    console.log(E_themeGRA)
     let E_themeGRA_STOP_list = Array.from(E_themeGRA.getElementsByTagName("stop"))
-    console.log(E_themeGRA_STOP_list)
     if (theme_percent < 100) {
         E_themeGRA_STOP_list[1].setAttribute('offset', Math.floor(theme_percent) + "%")
         E_themeGRA_STOP_list[2].setAttribute('offset', Math.floor(theme_percent) + "%")
@@ -229,17 +223,30 @@ title.addEventListener('click', () => {
 
 })
 
+let intervals = []
 
 let flane = document.getElementsByClassName('theme_icon')[0]
 flane.addEventListener('dblclick', (e) => {
+    intervals.forEach((i) => {
+        clearInterval(i)
+    })
+
     today_date = createDate(2022, 2, 20)
-    setInterval(function () {
+    let interval = setInterval(function () {
         today_date.setDate(today_date.getDate() + 1)
         render()
     }, 50)
+    intervals.push(interval)
 })
 
 let paginator_button = document.getElementsByClassName('paginator_button')[0]
 paginator_button.addEventListener('click', (e) => {
     alert('아직 구현되지 않았어요')
 })
+
+let reload = setInterval(function () {
+    today_date = new Date()
+    render()
+}, 600 * 1000)
+
+console.log(`[GREEL 12022] reload: ${reload}, interval: ${600}s`)
