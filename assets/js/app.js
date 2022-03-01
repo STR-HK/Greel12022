@@ -74,6 +74,7 @@ function get_dday_text(date) {
 
 let init_date = createDate(2022, 2, 20)
 let today_date = new Date()
+today_date.setDate(today_date.getDate() - 1)
 
 // let today_date = createDate(2022, 2, 20)
 // setInterval(function () {
